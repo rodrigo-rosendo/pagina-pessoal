@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Ubuntu Mono', monospace; */
+}
+
+#menu{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+#menu ul{ 
+    padding: 2%;
+    background-color: #152238;
+    display: flex;
+    justify-content: space-evenly;
+}
+#menu a{
+    color: white
+}
+
+#efeitos{
+    background-color: black;
+}
+#efeitos img{
+    width: 100%;
+    opacity: 0.5;
+    height: 1000px;
+}
+
+#saudacao{
+
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    top:250px;
+    left:50px;
+}
+
+#saudacao h1{
+    color:#4Ce64c;
+}
+
+#saudacao button{
+    background-color: #4Ce64c;
+    font-size: large;
+    padding: 2%;
+}
+main{
+    width: 70%;
+    margin: auto;
+}
+main h1{
+    color: #4Ce64c;
+    margin-top: 2%;
+}
+@keyframes transicao {
+    0%   {color: #4Ce64c;}
+    50%  {color: white;}
+    100% {color: #4Ce64c;}
+  }
+.animacao{
+    animation-name: transicao;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+#aboutme{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#aboutme img{
+    width: 300px;
+    height: 300px;
+}
+
+#projects{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    justify-content: space-between;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    width:30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
+    transition: 0.3s;
+  }
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+table { 
+    width:100%;
+    margin:0 auto;
+    border-spacing:0;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+ 
+caption {
+    font-size:130%;
+    font-weight:bold;
+    padding:5px 0;
+    background-color:#ECECEC;
+    border:1px solid #ccc;
+    border-bottom:none;
+}
+ 
+tr, td, th {
+    border:thin solid #ccc;
+    border-bottom:none;
+    border-right:none;
+    padding:5px;
+}
+ 
+td { 
+    text-align:center;
+}
+
+footer{
+    padding: 2%;
+    color: white;
+    background-color: #152238;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul{
+    display: flex;
+}
